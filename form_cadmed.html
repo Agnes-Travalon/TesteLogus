@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro Médico </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="Style.css"/>
+
+    </head>
+    <body>
+        <form name="frmCadMed" id="frmCadMed" method="POST">
+		<h1>Cadastro Médico</h1>
+		<label for="txtNome">Nome do Médico:</label>
+		<input type="text" id="txtNome" name="txtNome" placeholder="Nome" required/>
+		<br/>
+		<label for="txtCRM">CRM:</label>
+		<input type="text" id="txtCRM" name="txtCRM" placeholder="ex:0000000000/SP" required/>
+		<br/>
+		<label for="txtIdade">Idade:</label>
+		<input type="text" id="txtIdade" name="txtIdade" placeholder="ex:35" required/>
+		<br/>
+        <label for="txtConsultorio">Consultório:</label>
+		<input type="text" id="txtConsultorio" name="txtConsultorio" required/>
+		<br/>
+		<input type="submit" value="Enviar" name="btnEnviar"/>
+            
+	</form>	
+    <script>
+      function myFunction() 
+            {
+            document.getElementById("frmCadMed").submit();
+            }
+    </script>
+ 
+    </body>
+</html>
